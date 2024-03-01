@@ -29,8 +29,8 @@ while True:
         print('{} // {} = {}'.format(num1, num2, raiz))
     else:
         print('Insira um operador válido')
-    continuar = input('Deseja continuar? (s/n) ')
-    if continuar != 's':
+    continuar = input('Deseja continuar? (s/n) ').lower().strip()
+    if continuar not in ['sim', 's']:
         break
 
 #teste git
